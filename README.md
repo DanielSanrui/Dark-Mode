@@ -43,8 +43,7 @@ Este proyecto es una aplicación web desarrollada con **React**, **TypeScript** 
 - Clases CSS personalizadas están en `app.css`.
 
 ## 📌 Funcionalidades
-
-✅ Diseño responsivo.
-✅ Modo oscuro/claro basado en la preferencia del usuario.
-✅ Componente reutilizable para mostrar información.
-✅ Uso de Tailwind CSS para estilizar.
+- ✅ Diseño responsivo.
+- ✅ Modo oscuro/claro basado en la preferencia del usuario.
+- ✅ Componente reutilizable para mostrar información.
+- ✅ Uso de Tailwind CSS para estilizar.
