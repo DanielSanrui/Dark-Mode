@@ -1,100 +1,50 @@
-# Welcome to React Router!
+# Modo Oscuro utilizando React Router
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Este proyecto es una aplicación web desarrollada con **React**, **TypeScript** y **Tailwind CSS** que permite visualizar la información de una persona usuaria ficticia, incluyendo su biografía, personalidad, puntos de dolor y objetivos. Además, cuenta con un sistema de cambio de tema (claro/oscuro).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 🛠 Tecnologías Utilizadas
 
-## Features
+- **React** - Biblioteca para construir interfaces de usuario
+- **TypeScript** - Superset de JavaScript para tipado estático
+- **Tailwind CSS** - Framework de estilos utilitario
+- **React Router** - Para la navegación entre rutas
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+### Descripción de los archivos principales
 
-## Getting Started
+- **`components/CardInfo.tsx`** → Componente que muestra información en forma de tarjeta, ya sea un párrafo o una lista.
+- **`components/Header.tsx`** → Encabezado con el título "User Persona" y el botón para cambiar de tema.
+- **`components/Persona.tsx`** → Tarjeta con los detalles personales de la persona ficticia.
+- **`components/ThemeToggle.tsx`** → Botón para alternar entre modo claro, oscuro y sistema.
+- **`hooks/useDarkMode.ts`** → Hook personalizado para gestionar el tema de la aplicación.
+- **`routes/home.tsx`** → Página principal que ensambla todos los componentes.
+- **`root.tsx`** → Configuración general de la aplicación y manejo de errores.
 
-### Installation
+## 🚀 Instalación y Ejecución
 
-Install the dependencies:
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/user-persona-app.git
+   cd user-persona-app
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Accede a la aplicación en `http://localhost:5173` (o el puerto que indique Vite).
 
-```bash
-npm install
-```
+## 🎨 Estilos y Temas
 
-### Development
+- La aplicación utiliza Tailwind CSS para los estilos.
+- El cambio de tema se almacena en `localStorage` y se gestiona con el hook `useDarkMode.ts`.
+- Clases CSS personalizadas están en `app.css`.
 
-Start the development server with HMR:
+## 📌 Funcionalidades
 
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
-
-```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+✅ Diseño responsivo.
+✅ Modo oscuro/claro basado en la preferencia del usuario.
+✅ Componente reutilizable para mostrar información.
+✅ Uso de Tailwind CSS para estilizar.
